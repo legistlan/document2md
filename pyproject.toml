@@ -17,7 +17,13 @@ classifiers = [
 ]
 dependencies = [
     "requests>=2.31",
-    "pymupdf4llm>=1.28",
+    # pymupdf4llm 2.0 on PyPI is a 904-byte wheel with no dependencies and no
+    # requires-python, so on Python 3.10 (which 2.1 excludes) pip picked it and
+    # `import pymupdf` failed (CI, 2026-11-06). Excluding it resolves 3.10 to
+    # 1.28.2 and 3.11+ to 2.1; pymupdf is declared too because the backend
+    # imports it directly.
+    "pymupdf4llm>=1.28,!=2.0",
+    "pymupdf>=1.28",
 ]
 dynamic = ['version']
 
