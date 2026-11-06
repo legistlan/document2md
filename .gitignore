@@ -28,3 +28,7 @@ output/
 
 # Local Claude Code settings (not shared)
 .claude/settings.local.json
+
+# Quarto user site build output (the Sphinx developer site is built into _site/dev)
+website/_site/
+website/.quarto/

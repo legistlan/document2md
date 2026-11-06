@@ -7,9 +7,6 @@
 .. image:: https://badge.fury.io/py/document2md.svg
         :target: https://badge.fury.io/py/document2md
 
-.. image:: https://readthedocs.org/projects/document2md/badge/?version=latest
-        :target: https://document2md.readthedocs.io/en/latest/
-
 .. Registers the top-level package as a cross-reference target (it renders
    nothing): every module below is documented by its own `automodule`, but the
    package itself is only ever referred to, so without this the `:py:mod:`

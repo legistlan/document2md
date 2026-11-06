@@ -21,4 +21,4 @@ Markdown — whatever document they come from.
 - New package: [`document2md` on
   PyPI](https://pypi.org/project/document2md/) ·
   [source](https://github.com/legistlan/document2md)
-  · [docs](https://document2md.readthedocs.io/en/latest/)
+  · [docs](https://legistlan.github.io/document2md/dev/)

@@ -61,7 +61,7 @@ See [Install](pages/install.qmd) for what each command gets you,
 ways to run a conversion, and [Backends](pages/backends.qmd) for how
 `auto` picks between mineru and pymupdf. Extending the package itself is
 documented separately, on the
-[developer docs](https://document2md.readthedocs.io/).
+[developer docs](https://legistlan.github.io/document2md/dev/).
 
 ## Colophon {.unnumbered}
 

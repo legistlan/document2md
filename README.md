@@ -1,7 +1,6 @@
 # document2md
 
 [![test](https://github.com/legistlan/document2md/actions/workflows/test.yml/badge.svg)](https://github.com/legistlan/document2md/actions/workflows/test.yml)
-[![Documentation Status](https://readthedocs.org/projects/document2md/badge/?version=latest)](https://document2md.readthedocs.io/en/latest/)
 
 Converts a PDF, or a set of scanned page images, into Markdown — any
 document, such as an edition of Mexico's official gazette (DOF, *Diario
@@ -30,7 +29,7 @@ be read.
 ## Documentation
 
 - **Using the package:** [legistlan.github.io/document2md](https://legistlan.github.io/document2md/)
-- **Extending the package:** [document2md.readthedocs.io](https://document2md.readthedocs.io/)
+- **Extending the package:** [legistlan.github.io/document2md/dev](https://legistlan.github.io/document2md/dev/)
 
 ## Install
 

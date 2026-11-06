@@ -15,9 +15,9 @@ suite. Two other things share the repository:
   a *tombstone* (see below), with its own ``tests/``.
 - ``website/`` — the Quarto user site published to GitHub Pages at
   `legistlan.github.io/document2md <https://legistlan.github.io/document2md/>`_;
-  ``docs/`` is this Read the Docs developer site instead. The two have no
-  overlapping page: Pages is for using the package, Read the Docs for
-  extending it.
+  ``docs/`` is this Sphinx developer site, published to the same Pages
+  site under ``/dev/``. The two have no overlapping page: the Quarto site is
+  for using the package, this one for extending it.
 
 Two packages are published from one repository, so the release tag
 convention is ``<pkg>-v<version>`` (``document2md-v0.4.0``,
@@ -84,8 +84,10 @@ time as any ``nota2md`` release whose ``ocr`` extra requires it
 (``document2md[mineru]>=0.4.0``), or ``pip install nota2md[ocr]`` breaks
 for everyone outside the LegalIA repository. The Pages site publishes
 itself, via ``website.yml``, on every push to ``main`` that touches
-``website/``; Read the Docs must be imported once, by a human, at
-readthedocs.org — nothing in the repository can do that.
+``website/``, ``docs/`` or ``document2md/``: that one workflow renders the
+Quarto user site and builds this Sphinx developer site into its ``dev/``
+subdirectory, then deploys both together to GitHub Pages with
+``actions/deploy-pages``. No human has to import anything.
 
 The ``dof2md`` tombstone
 ---------------------------
