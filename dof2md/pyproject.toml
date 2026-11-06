@@ -24,7 +24,7 @@ dynamic = ['version']
 test = ["pytest>=7.0"]
 
 [project.urls]
-Homepage = "https://github.com/INGEOTEC/document2md"
+Homepage = "https://github.com/legistlan/document2md"
 
 [tool.setuptools.packages.find]
 include = ["dof2md", "dof2md.*"]

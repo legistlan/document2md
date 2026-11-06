@@ -9,8 +9,8 @@ execute:
 
 website:
   title: "document2md"
-  site-url: https://ingeotec.github.io/document2md/
-  repo-url: https://github.com/INGEOTEC/document2md
+  site-url: https://legistlan.github.io/document2md/
+  repo-url: https://github.com/legistlan/document2md
   navbar:
     background: "#f9f8f4"
     left:
@@ -28,7 +28,7 @@ website:
         text: Developer docs
     right:
       - icon: github
-        href: https://github.com/INGEOTEC/document2md
+        href: https://github.com/legistlan/document2md
         aria-label: GitHub
   page-footer:
     center: >

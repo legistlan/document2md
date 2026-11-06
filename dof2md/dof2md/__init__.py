@@ -27,5 +27,5 @@ raise ImportError(
     "    pip install document2md\n\n"
     "and import it as `document2md` (the public API is unchanged: "
     "`from document2md import BatchConverter`). "
-    "See https://github.com/INGEOTEC/document2md"
+    "See https://github.com/legistlan/document2md"
 )

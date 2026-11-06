@@ -68,7 +68,7 @@ tests/                    its pytest suite
 dof2md/                   the old PyPI name's tombstone (see below)
 scripts/check_package_versions.py
 website/                  Quarto user site, published to GitHub Pages at
-                          ingeotec.github.io/document2md — install, CLI,
+                          legistlan.github.io/document2md — install, CLI,
                           Python, backends; no API reference
 docs/                     Sphinx developer site, published at
                           document2md.readthedocs.io — architecture, backends,

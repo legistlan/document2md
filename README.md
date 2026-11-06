@@ -1,6 +1,6 @@
 # document2md
 
-[![test](https://github.com/INGEOTEC/document2md/actions/workflows/test.yml/badge.svg)](https://github.com/INGEOTEC/document2md/actions/workflows/test.yml)
+[![test](https://github.com/legistlan/document2md/actions/workflows/test.yml/badge.svg)](https://github.com/legistlan/document2md/actions/workflows/test.yml)
 [![Documentation Status](https://readthedocs.org/projects/document2md/badge/?version=latest)](https://document2md.readthedocs.io/en/latest/)
 
 Converts a PDF, or a set of scanned page images, into Markdown — any
@@ -29,7 +29,7 @@ be read.
 
 ## Documentation
 
-- **Using the package:** [ingeotec.github.io/document2md](https://ingeotec.github.io/document2md/)
+- **Using the package:** [legistlan.github.io/document2md](https://legistlan.github.io/document2md/)
 - **Extending the package:** [document2md.readthedocs.io](https://document2md.readthedocs.io/)
 
 ## Install
