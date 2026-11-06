@@ -57,13 +57,13 @@ jobs:
       - name: Run tests
         run: pytest tests
 
-  # Sphinx gate for the Read the Docs developer site: a strict HTML build
-  # (any broken cross-reference or other warning fails it) plus the
-  # documentation's few real, executed examples, separate from the pytest
-  # matrix above. Usage examples that would need mineru or pymupdf4llm live
-  # on the Pages site (website/) instead, not here, so there is little left
-  # to mark `# doctest: +SKIP` — the exception, where one remains, is written
-  # down on the page itself.
+  # Sphinx gate for the developer site (published under /dev/ on Pages by
+  # website.yml): a strict HTML build (any broken cross-reference or other
+  # warning fails it) plus the documentation's few real, executed examples,
+  # separate from the pytest matrix above. Usage examples that would need
+  # mineru or pymupdf4llm live on the user site (website/) instead, not here,
+  # so there is little left to mark `# doctest: +SKIP` — the exception, where
+  # one remains, is written down on the page itself.
   docs:
     runs-on: ubuntu-latest
     steps:
@@ -77,8 +77,8 @@ jobs:
         run: |
           pip install -r docs/requirements.txt
           # --no-deps: keeps the heavy mineru[pipeline] install (and
-          # pymupdf4llm) out of this job, which is also why
-          # .readthedocs.yaml installs it this way.
+          # pymupdf4llm) out of this job, which is also why website.yml
+          # installs it this way.
           pip install --no-deps -e .
       - name: Build the docs strictly
         run: python -m sphinx -n -W --keep-going -b html docs/source docs/build/html

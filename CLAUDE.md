@@ -70,15 +70,17 @@ scripts/check_package_versions.py
 website/                  Quarto user site, published to GitHub Pages at
                           legistlan.github.io/document2md — install, CLI,
                           Python, backends; no API reference
-docs/                     Sphinx developer site, published at
-                          document2md.readthedocs.io — architecture, backends,
-                          development, full API reference; no usage guides
-                          beyond a pointer to the Pages site
+docs/                     Sphinx developer site, published under /dev/ of the
+                          same Pages site (legistlan.github.io/document2md/dev/)
+                          — architecture, backends, development, full API
+                          reference; no usage guides beyond a pointer to the
+                          user site
 .github/workflows/        test.yml, website.yml, publish-pypi.yml
 ```
 
-The two sites have two audiences and no overlapping page: the Pages site is
-for using the package, Read the Docs for extending it.
+The two sites have two audiences and no overlapping page: the Quarto site (at
+the Pages root) is for using the package, the Sphinx site (under `/dev/`) for
+extending it. Two sites, one host.
 
 Two packages are published from this repository, so the release tag convention
 is `<pkg>-v<version>` (`document2md-v0.3.0`, `dof2md-v0.3.0`) rather than a
@@ -142,8 +144,8 @@ needs no mineru at all.
 
 Usage examples that would need `mineru` or `pymupdf4llm` (entering a
 `BatchConverter`, running the CLI) live on the Pages site (`website/`) now,
-not on Read the Docs — that site's code blocks are illustrative and not
-executed at all, and say so once per page. Read the Docs itself currently
+not on the developer site — that site's code blocks are illustrative and not
+executed at all, and say so once per page. The developer site itself currently
 has no `# doctest: +SKIP` example: `document2md.cutter`'s real,
 executed example on `architecture.rst` is the only one on the site, and it
 needs neither backend nor any file on disk. If a future page needs one
@@ -163,12 +165,13 @@ set on this repository. `publish-pypi.yml` refuses a tag that disagrees with
 release whose `ocr` extra requires it** (`document2md>=0.3.0`), or
 `pip install nota2md[ocr]` breaks for everyone outside the LegalIA repository.
 
-The Pages site publishes itself: `website.yml` renders `website/` on every
-pull request that touches it, and publishes to the `gh-pages` branch on every
-push to `main` that does — no human action once the workflow exists. Read
-the Docs is the opposite: the project must be imported once, by a human, at
-readthedocs.org; nothing in this repository can do that, and
-`document2md.readthedocs.io` answers 404 until it happens.
+One GitHub Pages site serves both documentation sites, and it publishes
+itself: `website.yml` renders the Quarto `website/` and builds the Sphinx
+`docs/` strictly into `website/_site/dev`, on every pull request that touches
+`website/`, `docs/`, `document2md/` (autodoc reads the docstrings),
+`pyproject.toml` or the workflow. Pull requests only build; every push to
+`main` that touches them also deploys, with `actions/deploy-pages` (Pages'
+source is "GitHub Actions", there is no `gh-pages` branch) — no human action.
 
 ## Language policy
 

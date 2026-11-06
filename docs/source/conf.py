@@ -5,18 +5,18 @@
 
 # -- Path setup ---------------------------------------------------------
 #
-# document2md is installed editable (--no-deps) by Read the Docs, see
-# .readthedocs.yaml, rather than reached via sys.path manipulation here, so
-# conf.py only needs to import the already-installed package to read its
-# __version__.
+# document2md is installed editable (--no-deps) by the workflows that build
+# these docs (website.yml, test.yml) rather than reached via sys.path
+# manipulation here, so conf.py only needs to import the already-installed
+# package to read its __version__.
 
 import document2md
 
 # -- Project information -------------------------------------------------
 
 project = "document2md"
-copyright = "2026, INGEOTEC"
-author = "INGEOTEC"
+copyright = "2026, legistlan"
+author = "legistlan"
 
 # The repository is the package, so there is a single version here — kept as
 # the same |document2md_version| substitution the page used while this was
@@ -71,8 +71,8 @@ add_module_names = False
 # mineru-api CLI as a subprocess (see document2md/mineru_server.py) — and
 # document2md/pymupdf_backend.py imports pymupdf/pymupdf4llm lazily, inside
 # functions rather than at module level, so autodoc needs no mock for either;
-# document2md is installed with --no-deps in .readthedocs.yaml precisely so
-# neither the heavy mineru[pipeline] install (and its libgl1/opencv system
+# document2md is installed with --no-deps in website.yml and test.yml precisely
+# so neither the heavy mineru[pipeline] install (and its libgl1/opencv system
 # dependency, see .github/workflows/test.yml) nor pymupdf4llm ever has to
 # happen for a docs build.
 

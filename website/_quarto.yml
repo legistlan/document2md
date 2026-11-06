@@ -24,7 +24,7 @@ website:
         text: Python
       - href: pages/backends.qmd
         text: Backends
-      - href: https://document2md.readthedocs.io/
+      - href: https://legistlan.github.io/document2md/dev/
         text: Developer docs
     right:
       - icon: github
@@ -32,7 +32,7 @@ website:
         aria-label: GitHub
   page-footer:
     center: >
-      document2md · [INGEOTEC](https://github.com/INGEOTEC) ·
+      document2md · [legistlan](https://github.com/legistlan) ·
       Code under the Apache 2.0 license
 
 format:
