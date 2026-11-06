@@ -58,7 +58,7 @@ flows through it.
 The ``document2md`` console script. Parses arguments and drives one
 :py:class:`~document2md.batch.BatchConverter` conversion, printing the
 resolved backend and where the result was saved. See the user site's
-`Command line <https://ingeotec.github.io/document2md/pages/cli.html>`_
+`Command line <https://legistlan.github.io/document2md/pages/cli.html>`_
 page for its flags and worked examples; :doc:`api/cli` for the full API
 reference.
 
@@ -74,7 +74,7 @@ starts a persistent ``mineru-api`` server only when that backend is
 stops it. Calling it converts one document — a single PDF path, or a list
 of image paths for a document spanning several scanned pages — to
 Markdown. See :doc:`backends` for how resolution and dispatch work, and
-the user site's `Python <https://ingeotec.github.io/document2md/pages/python.html>`_
+the user site's `Python <https://legistlan.github.io/document2md/pages/python.html>`_
 page for worked examples; :doc:`api/batch` for the full API reference.
 
 ``document2md.mineru_server`` — keeping mineru-api warm

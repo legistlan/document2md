@@ -26,7 +26,7 @@ mineru = ["mineru[pipeline]"]
 test = ["pytest>=7.0"]
 
 [project.urls]
-Homepage = "https://github.com/INGEOTEC/document2md"
+Homepage = "https://github.com/legistlan/document2md"
 
 [project.scripts]
 document2md = "document2md.cli:main"

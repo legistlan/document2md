@@ -1,8 +1,8 @@
 :mod:`document2md`
 ==================
 
-.. image:: https://github.com/INGEOTEC/document2md/actions/workflows/test.yml/badge.svg
-        :target: https://github.com/INGEOTEC/document2md/actions/workflows/test.yml
+.. image:: https://github.com/legistlan/document2md/actions/workflows/test.yml/badge.svg
+        :target: https://github.com/legistlan/document2md/actions/workflows/test.yml
 
 .. image:: https://badge.fury.io/py/document2md.svg
         :target: https://badge.fury.io/py/document2md
@@ -31,7 +31,7 @@ documented at `legalia.readthedocs.io <https://legalia.readthedocs.io/en/latest/
    the full API reference, for extending the package itself. If you only
    want to *use* document2md — install it, run it from the command line or
    from Python, pick a backend — see the user site at
-   `ingeotec.github.io/document2md <https://ingeotec.github.io/document2md/>`_.
+   `legistlan.github.io/document2md <https://legistlan.github.io/document2md/>`_.
 
 How this documentation is organised
 ====================================

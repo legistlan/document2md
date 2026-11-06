@@ -6,7 +6,7 @@ share one selector: a ``backend`` argument (``--backend`` on the CLI)
 naming who converts a given document — ``"auto"`` (default), ``"mineru"``
 or ``"pymupdf"``. This page is about how that selector is implemented, and
 what it takes to add a fourth backend; see the user site's
-`Backends <https://ingeotec.github.io/document2md/pages/backends.html>`_
+`Backends <https://legistlan.github.io/document2md/pages/backends.html>`_
 page for the `auto` policy and a comparison of the two backends that ship
 today.
 

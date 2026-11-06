@@ -14,7 +14,7 @@ suite. Two other things share the repository:
 - ``dof2md/`` — a code-less final release for the package's old PyPI name,
   a *tombstone* (see below), with its own ``tests/``.
 - ``website/`` — the Quarto user site published to GitHub Pages at
-  `ingeotec.github.io/document2md <https://ingeotec.github.io/document2md/>`_;
+  `legistlan.github.io/document2md <https://legistlan.github.io/document2md/>`_;
   ``docs/`` is this Read the Docs developer site instead. The two have no
   overlapping page: Pages is for using the package, Read the Docs for
   extending it.
