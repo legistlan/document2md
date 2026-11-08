@@ -14,7 +14,7 @@ from document2md import BatchConverter
 The public API, the CLI flags and the output are unchanged — only the name is
 different. The old one was wrong: the package has had no notion of the *Diario
 Oficial de la Federación* since the edition download moved out into
-[`dofjson`](https://github.com/INGEOTEC/LegalIA/tree/master/packages/dofjson).
+[`dofjson`](https://github.com/legistlan/dofjson).
 What it does is convert a PDF, or an ordered set of scanned page images, to
 Markdown — whatever document they come from.
 

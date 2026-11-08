@@ -68,7 +68,7 @@ pip install -e ".[mineru,test]"
 images — and converts it to Markdown. It never downloads anything itself;
 get the PDF first (e.g. `dofjson.download_edicion_pdf` for a whole DOF
 edition by date and edition, see the
-[dofjson README](https://github.com/INGEOTEC/LegalIA/tree/master/packages/dofjson)),
+[dofjson README](https://github.com/legistlan/dofjson)),
 then convert it:
 
 ```bash

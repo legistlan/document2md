@@ -76,10 +76,15 @@ Versioning and publishing
 package's ``__version__`` may be at most one release ahead of what's
 published on PyPI (the next patch, or the next minor with patch reset to
 0) — never equal, never further ahead. Publishing itself is a human
-action: push a ``document2md-v<version>`` (or ``dof2md-v<version>``) tag
-once ``__version__`` is bumped, with the ``TWINE`` secret set on the
-repository; ``publish-pypi.yml`` refuses a tag that disagrees with
-``pyproject.toml``. ``document2md`` must reach PyPI before or at the same
+action, done in either of two ways. From GitHub, open Actions →
+"Publish to PyPI" → Run workflow, on ``main``, and choose the package
+(``document2md`` or ``dof2md``): that run builds whatever ``__version__``
+``main`` carries and compares it with no tag. Or push a
+``document2md-v<version>`` (or ``dof2md-v<version>``) tag once
+``__version__`` is bumped; ``publish-pypi.yml`` refuses a tag that
+disagrees with ``pyproject.toml``. Either way the ``TWINE`` secret must be
+available to the repository — today it is a legistlan organization secret,
+not a repository one. ``document2md`` must reach PyPI before or at the same
 time as any ``nota2md`` release whose ``ocr`` extra requires it
 (``document2md[mineru]>=0.4.0``), or ``pip install nota2md[ocr]`` breaks
 for everyone outside the LegalIA repository. The Pages site publishes
