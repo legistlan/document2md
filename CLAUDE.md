@@ -156,10 +156,14 @@ itself, not silently.
 
 ## Publishing
 
-Publishing is a human action: push a `document2md-v<version>` (or
-`dof2md-v<version>`) tag once `__version__` is bumped, with the `TWINE` secret
-set on this repository. `publish-pypi.yml` refuses a tag that disagrees with
-`pyproject.toml`.
+Publishing is a human action, done in either of two ways. From GitHub:
+Actions → "Publish to PyPI" → Run workflow, on `main`, choosing the package
+(`document2md` or `dof2md`); that run builds whatever `__version__` `main`
+carries and compares it with no tag. Or push a `document2md-v<version>` (or
+`dof2md-v<version>`) tag once `__version__` is bumped; `publish-pypi.yml`
+refuses a tag that disagrees with `pyproject.toml`. Either way the `TWINE`
+secret must be available to this repository — today it is a legistlan
+organization secret, not a repository one.
 
 **`document2md` must reach PyPI before or at the same time as any `nota2md`
 release whose `ocr` extra requires it** (`document2md>=0.3.0`), or

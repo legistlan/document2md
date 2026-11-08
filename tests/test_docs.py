@@ -37,7 +37,9 @@ class TestNoDeadDocumentationUrls(unittest.TestCase):
 
     The Read the Docs project was never imported and the site moved off
     INGEOTEC's Pages host, so these URLs answer 404; no tracked file may point
-    at them again.
+    at them again. The same goes for LegalIA's own Read the Docs site (also
+    404) and for dofjson's old path inside the LegalIA monorepo: dofjson now
+    lives at https://github.com/legistlan/dofjson.
     """
 
     # Built from fragments so this file does not flag itself.
@@ -45,6 +47,8 @@ class TestNoDeadDocumentationUrls(unittest.TestCase):
         "document2md." + "readthedocs.io",
         "readthedocs.org/projects/" + "document2md",
         "ingeotec." + "github.io",
+        "legalia." + "readthedocs.io",
+        "LegalIA/tree/master/packages/" + "dofjson",
     )
 
     def test_no_tracked_file_mentions_a_dead_url(self):

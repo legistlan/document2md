@@ -20,15 +20,14 @@ analysis) or `pymupdf4llm <https://github.com/pymupdf/RAG>`_ (reading a
 born-digital PDF's own embedded text layer, no OCR needed) — optionally
 cropped down to a single section. This package was extracted from the
 `LegalIA <https://github.com/INGEOTEC/LegalIA>`_ monorepo at commit
-``e1f258c``; the packages it used to share a repository with are
-documented at `legalia.readthedocs.io <https://legalia.readthedocs.io/en/latest/>`_.
+``e1f258c``; how it fits with the packages it used to share a repository
+with is covered on the `user site <https://legistlan.github.io/document2md/>`_.
 
 .. note::
    This is the **developer** documentation: architecture, backends, and
    the full API reference, for extending the package itself. If you only
    want to *use* document2md — install it, run it from the command line or
-   from Python, pick a backend — see the user site at
-   `legistlan.github.io/document2md <https://legistlan.github.io/document2md/>`_.
+   from Python, pick a backend — see the user site linked above.
 
 How this documentation is organised
 ====================================

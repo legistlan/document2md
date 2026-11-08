@@ -44,16 +44,15 @@ intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
     "requests": ("https://requests.readthedocs.io/en/latest/", None),
 }
-# dofjson and nota2md stayed in the LegalIA monorepo when document2md was
-# extracted out of it (issue #233), and index.rst still refers to both — they
-# are what feeds document2md a PDF and what calls it at all. They are written
-# as plain external links to the LegalIA repository rather than cross-resolved
-# through intersphinx: legalia.readthedocs.io publishes no objects.inv today
-# (checked directly — the whole site answers 404), so an entry pointing at it
-# would only warn on every build while resolving nothing. Once that site is
-# published, `"legalia": ("https://legalia.readthedocs.io/en/latest/", None)`
-# above, plus :py:func:/:py:mod: roles on those three names in index.rst, is
-# all it takes.
+# dofjson and nota2md were split off when document2md was extracted from the
+# LegalIA monorepo (issue #233): dofjson now lives at
+# https://github.com/legistlan/dofjson, nota2md still in the LegalIA
+# repository. They are what feeds document2md a PDF and what calls it at all,
+# and they are written as plain external links rather than cross-resolved
+# through intersphinx, because neither publishes an objects.inv (an entry for
+# either would only warn on every build while resolving nothing). Once one
+# does, adding it to the mapping above, plus :py:func:/:py:mod: roles on its
+# names, is all it takes.
 
 source_suffix = ".rst"
 master_doc = "index"
